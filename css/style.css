@@ -1,0 +1,541 @@
+:root{
+    --main-padding: 64px 0 0 ;
+    --shadow:3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+body{
+    background-color: #f5f5f5;
+}
+.title{
+    margin-bottom: 4rem;
+}
+.title h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.title .ptitle{
+    position: relative;
+}
+.title .ptitle::before{
+    content:" ";
+    position: absolute;
+    width: 40px ;
+    height: 5px;
+    left: 48%;
+    margin: 0 auto;
+    bottom:-26px ;
+    background-color: #0078FF;
+}
+
+/* Navbar */
+.main-nav{
+    background-color: rgba(0, 0, 0, 0.8);    
+}
+/* .main-nav a{
+    color: white ;
+} */
+.main-nav .navbar-brand{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.main-nav .nav-item .nav-link{
+    color: white;
+    /* font-size: 1rem;
+    font-weight: 600; */
+}
+.main-nav .nav-item {
+    padding: 10px 0 5px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#home .content:after{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    content: "";
+    animation: typing 16s linear infinite;
+}
+  
+@keyframes typing {
+    0% {content: "|";}
+    1.3888888888888888% {content: "D|";}
+    2.7777777777777777% {content: "De|";}
+    4.166666666666666% {content: "Dev|";}
+    5.555555555555555% {content: "Deve|";}
+    6.944444444444445% {content: "Devel|";}
+    8.333333333333332% {content: "Develo|";}
+    9.722222222222221% {content: "Develop|";}
+    11.11111111111111% {content: "Develope|";}
+    12.5% {content: "Developer|";}
+    18.055555555555557% {content: "Developer|";}
+    18.75% {content: "Develope|";}
+    19.444444444444443% {content: "Develop|";}
+    20.13888888888889% {content: "Develo|";}
+    20.833333333333336% {content: "Devel|";}
+    21.52777777777778% {content: "Deve|";}
+    22.22222222222222% {content: "Dev|";}
+    22.916666666666668% {content: "De|";}
+    23.61111111111111% {content: "D|";}
+    25% {content: "|";}
+    26.25% {content: "F|";}
+    27.5% {content: "Fr|";}
+    28.75% {content: "Fre|";}
+    30% {content: "Free|";}
+    31.25% {content: "Freel|";}
+    32.5% {content: "Freela|";}
+    33.75% {content: "Freelan|";}
+    35% {content: "Freelanc|";}
+    36.25% {content: "Freelance|";}
+    37.5% {content: "Freelancer|";}
+    43.125% {content: "Freelancer|";}
+    43.75% {content: "Freelance|";}
+    44.375% {content: "Freelanc|";}
+    45% {content: "Freelan|";}
+    45.625% {content: "Freela|";}
+    46.25% {content: "Freel|";}
+    46.875% {content: "Free|";}
+    47.5% {content: "Fre|";}
+    48.125% {content: "Fr|";}
+    48.75% {content: "F|";}
+    50% {content: "|";}
+    51.041666666666664% {content: "P|";}
+    52.083333333333336% {content: "Ph|";}
+    53.125% {content: "Pho|";}
+    54.166666666666664% {content: "Phot|";}
+    55.208333333333336% {content: "Photo|";}
+    56.25% {content: "Photog|";}
+    57.291666666666664% {content: "Photogr|";}
+    58.333333333333336% {content: "Photogra|";}
+    59.375% {content: "Photograp|";}
+    60.41666666666667% {content: "Photograph|";}
+    61.458333333333336% {content: "Photographe|";}
+    62.5% {content: "Photographer|";}
+    68.22916666666667% {content: "Photographer|";}
+    68.75% {content: "Photographe|";}
+    69.27083333333333% {content: "Photograph|";}
+    69.79166666666667% {content: "Photograp|";}
+    70.3125% {content: "Photogra|";}
+    70.83333333333333% {content: "Photogr|";}
+    71.35416666666667% {content: "Photog|";}
+    71.875% {content: "Photo|";}
+    72.39583333333333% {content: "Phot|";}
+    72.91666666666667% {content: "Pho|";}
+    73.4375% {content: "Ph|";}
+    73.95833333333333% {content: "P|";}
+    75% {content: "|";}
+    76.38888888888889% {content: "D|";}
+    77.77777777777777% {content: "De|";}
+    79.16666666666667% {content: "Des|";}
+    80.55555555555556% {content: "Desi|";}
+    81.94444444444444% {content: "Desig|";}
+    83.33333333333333% {content: "Design|";}
+    84.72222222222223% {content: "Designe|";}
+    86.11111111111111% {content: "Designer|";}
+    87.5% {content: "Designer|";}
+    93.05555555555556% {content: "Designer|";}
+    93.75% {content: "Designer|";}
+    94.44444444444444% {content: "Designe|";}
+    95.13888888888889% {content: "Design|";}
+    95.83333333333333% {content: "Desig|";}
+    96.52777777777777% {content: "Desi|";}
+    97.22222222222223% {content: "Des|";}
+    97.91666666666667% {content: "De|";}
+    98.61111111111111% {content: "D|";}
+    100% {content: "|";}
+}
+
+/* Home Section */
+#home{
+    height: 100vh;
+    background-image:linear-gradient(to bottom , rgba(0, 0, 0, 0.568) , rgba(0, 0, 0, 0.568) ) , url('../images/hero-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .content{
+   text-align: center;
+  
+}
+#home .content h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 24px;
+}
+#home .content p{
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* About Section */
+#about{
+    padding: var(--main-padding);
+}
+#about .content{
+    background-color: white;
+    padding: 4rem 3rem ;
+    margin: 0 0 3rem;
+    box-shadow: var(--shadow);
+}
+#about .info li{
+    display: flex;
+}
+#about .info li span{
+    font-weight: 600;
+    padding-right: 5px;
+}
+#about .html-progress{
+    width: 85%;
+}
+#about .js-progress{
+    width: 90%;
+}
+#about .skills{
+    font-size: 16px;
+}
+#about .title{
+    position: relative;
+}
+#about .title:before{
+    content: "";
+    position: absolute;
+    background-color: #0078FF;
+    bottom: -8px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+}
+
+/* Services Section  */
+#services{
+    padding: 48px 0 0;
+}
+#services .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#services .card{
+    border-radius: 1rem;
+    padding: 2.5rem 1.3rem;
+    border: 1px solid transparent;
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+}
+#services .card-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px solid #0078FF;
+    width: 7.5rem;
+    height:7.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    transition: all 1s;
+}
+
+#services .card-icon:hover{
+    color: white;
+    border-color: #CDE1F8;
+    background-color: #0078FF;
+}
+
+#services .card-title {
+    padding: 6.4px 0;
+    margin: 0 0 8px;
+    font-size: 22.4px;
+}
+#services .card-text  p{
+    margin-bottom: 16px ;
+}
+
+/* Counters Section */
+#counters{
+   background-image: linear-gradient(to bottom , #186cccaf,#186cccaf) ,url('../images/counters-bg.jpg');
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   min-height: 12.5rem;
+  
+
+}
+.counter {
+    padding-block:8rem  ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.counter .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px solid #CDE1F8;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 1s;
+}
+
+/* Portfolio Section */
+#portfolio{
+    padding: var(--main-padding);
+}
+#portfolio .card{
+    border-color: transparent;
+    box-shadow: var(--shadow);
+    border-radius: 0; 
+}
+#portfolio .card .card-body{
+    padding: 2rem .75rem 1rem 1rem;
+}
+#portfolio .card .card-body span{
+    color: #0078FF;
+}
+#portfolio .card .card-body .card-text{
+    font-size: .75rem;
+}
+#portfolio .card .card-body .card-title{
+    font-size: 1.1875rem;
+    margin-bottom: 8px;
+}
+#portfolio .card .content{
+    padding: 0 .75rem;
+}
+#portfolio .card .card-body .card-icon {
+    width: 2.5rem ;
+    height: 2.5rem ;
+    font-size: 1.5rem;
+    color: #0078FF;
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .card-image{
+    overflow: hidden;
+}
+#portfolio .card-image img{
+    transition: transform 1s ease;
+}
+#portfolio .card-image:hover img{
+    transform: scale(1.3);
+}
+
+/* Slider Section */
+#slider{
+    padding: var(--main-padding);
+    background-image: linear-gradient(to bottom , #4b9bf1b3,#196cd8a3) ,url('../images/overlay-bg.jpg')  ;
+    background-position: center center ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#slider .carousel-item img{
+    width: 150px ;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    
+}
+#slider .carousel-item{
+    text-align: center;
+    color: white;
+}
+
+#slider .carousel-item h4{
+    font-weight: 600;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+
+#slider .carousel-indicators button{
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+} 
+
+#blog{
+    padding: var(--main-padding);
+}
+
+#blog .card .card-body .content a{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+    transition: color 1s ;
+}
+#blog .card .card-body .content a:hover{
+    color: #0078FF;
+}
+#blog .card .card-body .content .card-text{
+    margin: 16px 0;
+}
+#blog .card .card-image{
+    position: relative;
+}
+#blog .card .card-image .layer{
+    position: absolute;
+    text-align: center;
+    bottom: -15px;
+    left: 40%;
+    padding: 0px 15px 5px ;
+    border-radius: 5px;
+    line-height: 1.5625rem;
+    padding: 5px 15px ;
+    color: white;
+    background-color: #0078FF;
+}
+
+#blog .card .card-image .layer h6{
+    font-size: .7rem;
+}
+
+#blog .card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0;
+}
+#blog .card .card-footer  img{
+   border-radius: 50%;
+    margin-right:4px;
+    width: 30px;
+} 
+
+#blog .card .card-footer  a{
+    color: black;
+    transition: color 1s;
+}
+#blog .card .card-footer .image:hover a {
+    color: #0078FF;
+}
+
+#contact{
+    padding: var(--main-padding);
+    /* height: 37.5rem; */
+    background-image: linear-gradient(to bottom , #186cccaf,#186cccaf), url("../images/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 4rem;
+}
+#contact .left .left-title{
+    position: relative;
+}
+#contact .left .left-title:before{
+    content: "";
+    position: absolute;
+    background-color: #0078FF;
+    bottom: -8px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+}
+
+#contact .container{
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 3rem 2rem;
+}
+#contact .left .form{
+    text-align: center;
+}
+#contact .left .form textarea , #contact .left .form .input {
+    border: 2px solid #EFF0F3;
+    padding: 10px 15px;
+} 
+#contact .left .form .button button{
+    color: white;
+    background-color: #0078FF;
+    padding: 10px 24px;
+    border-radius: 5rem ;
+    border: 5px solid transparent;
+    transition: all 1s;
+}
+#contact .left .form .button button:hover{
+    background-color: #3393FF;
+    border-color: #CDE1F8;
+}
+
+#contact .right .right-title{
+    position: relative;
+}
+#contact .right .right-title:before{
+    content: "";
+    position: absolute;
+    background-color: #0078FF;
+    bottom: -8px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+}
+
+#contact .info ul i{
+    color: #0078FF;
+    padding: 0 5px;
+}
+#contact .icons ul{
+    display: flex;
+
+}
+#contact .icons ul li a{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 4px;
+    transition: all 1s;
+}
+#contact .icons ul li{
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin: 0 15px 0 0;
+    line-height:1.6 ;    border-radius: 50%;
+    border: 3px solid #0078FF;
+    transition: all 1s;
+}
+
+#contact .icons ul li:hover a{
+    color: white;
+}
+#contact .icons ul li:hover{
+    background-color: #0078FF;
+    border-color: #CDE1F8;
+}
+
+#footer{
+    background-color: #0062D3;
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+}
+#footer .content span{
+    font-weight: 700;
+}
+#footer .more-content a{
+    text-decoration: none;
+    color: white;
+}
